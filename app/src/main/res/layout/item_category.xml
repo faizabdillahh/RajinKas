@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardElevation="2dp"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/viewColor"
+            android:layout_width="12dp"
+            android:layout_height="32dp"
+            android:background="@color/primary"
+            android:layout_marginEnd="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCategoryType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pemasukan"
+                android:textSize="12sp"
+                android:textColor="?attr/colorSecondary" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDefault"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_history"
+            android:visibility="gone"
+            android:layout_marginEnd="8dp"
+            app:tint="?attr/colorOutline"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more_vert"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:contentDescription="@string/options" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

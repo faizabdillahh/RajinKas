@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAuditLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_audit_log"
+        style="@style/Widget.Material3.Button.TonalButton"
+        app:icon="@drawable/ic_history"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_management"
+        style="@style/Widget.Material3.Button.TonalButton"
+        app:icon="@drawable/ic_dashboard"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDuesConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dues_config"
+        style="@style/Widget.Material3.Button.TonalButton"
+        app:icon="@drawable/ic_payments"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/backup_data"
+        style="@style/Widget.Material3.Button.TonalButton"
+        app:icon="@drawable/ic_launcher_foreground"
+        android:layout_marginBottom="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restore_data"
+        style="@style/Widget.Material3.Button.TonalButton"
+        app:icon="@drawable/ic_launcher_foreground"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appearance"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedButton="@+id/btnThemeFollowSystem">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThemeLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/theme_light"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThemeFollowSystem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/theme_system"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThemeDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/theme_dark"
+            style="@style/Widget.Material3.Button.OutlinedButton"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textColor="?attr/colorError"/>
+</LinearLayout>

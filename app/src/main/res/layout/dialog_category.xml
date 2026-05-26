@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category_management"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/category_name_hint"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:singleSelection="true"
+        app:checkedButton="@+id/btnIncome">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIncome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/income"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExpense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/expense"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Warna"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+        <!-- Colors will be added programmatically or as static Chips -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipTeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teal"
+            app:chipBackgroundColor="@color/primary"
+            app:chipIconVisible="false"
+            style="@style/Widget.Material3.Chip.Filter" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merah"
+            app:chipBackgroundColor="#F44336"
+            app:chipIconVisible="false"
+            style="@style/Widget.Material3.Chip.Filter" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biru"
+            app:chipBackgroundColor="#2196F3"
+            app:chipIconVisible="false"
+            style="@style/Widget.Material3.Chip.Filter" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oranye"
+            app:chipBackgroundColor="#FF9800"
+            app:chipIconVisible="false"
+            style="@style/Widget.Material3.Chip.Filter" />
+    </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

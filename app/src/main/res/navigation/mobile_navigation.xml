@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.rajinkas.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_transactions"
+        android:name="com.rajinkas.ui.transactions.TransactionsFragment"
+        android:label="Transaksi" />
+
+    <fragment
+        android:id="@+id/navigation_students"
+        android:name="com.rajinkas.ui.students.StudentsFragment"
+        android:label="Siswa" />
+
+    <fragment
+        android:id="@+id/navigation_reports"
+        android:name="com.rajinkas.ui.reports.ReportsFragment"
+        android:label="Laporan"
+        tools:layout="@layout/fragment_reports" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.rajinkas.ui.settings.SettingsFragment"
+        android:label="Pengaturan" />
+
+    <fragment
+        android:id="@+id/navigation_add_transaction"
+        android:name="com.rajinkas.ui.transactions.AddTransactionFragment"
+        android:label="Catat Transaksi"
+        tools:layout="@layout/fragment_add_transaction" />
+
+    <fragment
+        android:id="@+id/navigation_bulk_payment"
+        android:name="com.rajinkas.ui.transactions.BulkPaymentFragment"
+        android:label="Penarikan Massal"
+        tools:layout="@layout/fragment_bulk_payment" />
+
+    <fragment
+        android:id="@+id/navigation_audit_log"
+        android:name="com.rajinkas.ui.settings.AuditLogFragment"
+        android:label="Audit Log"
+        tools:layout="@layout/fragment_audit_log" />
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.rajinkas.ui.settings.CategoryFragment"
+        android:label="Manajemen Kategori" />
+
+    <fragment
+        android:id="@+id/navigation_dues_config"
+        android:name="com.rajinkas.ui.settings.DuesConfigFragment"
+        android:label="Konfigurasi Iuran" />
+
+    <fragment
+        android:id="@+id/navigation_arrears"
+        android:name="com.rajinkas.ui.reports.ArrearsFragment"
+        android:label="Daftar Tunggakan" />
+</navigation>

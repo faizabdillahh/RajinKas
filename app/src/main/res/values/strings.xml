@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">RajinKas</string>
+
+    <!-- Dashboard -->
+    <string name="total_balance">Total Saldo Kas</string>
+    <string name="income">Pemasukan</string>
+    <string name="expense">Pengeluaran</string>
+    <string name="bulk_action">Tarik Kas Massal</string>
+    <string name="recent_transactions">Transaksi Terakhir</string>
+    <string name="add">Tambah</string>
+
+    <!-- Auth & Onboarding -->
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="back">Kembali</string>
+    <string name="next">Lanjut</string>
+    <string name="finish">Selesai</string>
+    <string name="class_info">Informasi Kelas</string>
+    <string name="class_name_hint">Nama Kelas (ex: XII IPA 3)</string>
+    <string name="school_name_hint">Nama Sekolah</string>
+    <string name="academic_year_hint">Tahun Ajaran (ex: 2025/2026)</string>
+    <string name="admin_account">Akun Bendahara</string>
+    <string name="full_name">Nama Lengkap</string>
+
+    <!-- Titles -->
+    <string name="title_students">Daftar Siswa</string>
+    <string name="title_transactions">Daftar Transaksi</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="title_reports">Laporan Keuangan</string>
+    <string name="title_add_transaction">Catat Transaksi</string>
+    <string name="title_bulk_payment">Penarikan Kas Massal</string>
+    <string name="title_audit_log">Audit Log</string>
+
+    <!-- Actions -->
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Hapus</string>
+    <string name="edit">Edit</string>
+    <string name="options">Opsi</string>
+    <string name="logout">Logout</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="close">Tutup</string>
+
+    <!-- Hints -->
+    <string name="search_students">Cari nama atau nomor absen</string>
+    <string name="search_transactions">Cari deskripsi atau nominal</string>
+    <string name="category_hint">Kategori</string>
+    <string name="date_hint">Tanggal</string>
+    <string name="description_hint">Keterangan</string>
+    <string name="amount_hint">Nominal</string>
+    <string name="student_number_hint">Nomor Absen</string>
+    <string name="phone_hint">Nomor HP (Opsional)</string>
+    <string name="period_hint">Periode (ex: Minggu 3 Mei)</string>
+    <string name="config_name_hint">Nama Konfigurasi</string>
+    <string name="category_name_hint">Nama Kategori</string>
+
+    <!-- Settings -->
+    <string name="view_audit_log">Lihat Audit Log</string>
+    <string name="category_management">Manajemen Kategori</string>
+    <string name="dues_config">Konfigurasi Iuran</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="appearance">Tampilan</string>
+    <string name="theme_light">Terang</string>
+    <string name="theme_dark">Gelap</string>
+    <string name="theme_system">Sistem</string>
+
+    <!-- Messages -->
+    <string name="no_transactions">Belum ada transaksi</string>
+    <string name="no_transactions_desc">Mulai catat pemasukan atau pengeluaran kelas Anda.</string>
+    <string name="no_students">Belum ada siswa</string>
+    <string name="no_students_desc">Tambahkan siswa kelas Anda untuk memulai.</string>
+    <string name="selected_students_count">%d Siswa Terpilih</string>
+    <string name="delete_student_confirm">Apakah Anda yakin ingin menghapus %s? Seluruh riwayat transaksi akan tetap tersimpan.</string>
+    <string name="delete_transaction_confirm">Apakah Anda yakin ingin menghapus transaksi \'%s\'?</string>
+    <string name="empty_data_warning">Semua data wajib diisi</string>
+    <string name="success_save">Data berhasil disimpan</string>
+    <string name="success_delete">Data berhasil dihapus</string>
+
+    <!-- Reports -->
+    <string name="export_transactions">Daftar Transaksi</string>
+    <string name="export_transactions_desc">Ekspor seluruh riwayat transaksi ke PDF</string>
+    <string name="export_dues">Status Iuran Siswa</string>
+    <string name="export_dues_desc">Ekspor status pembayaran siswa ke PDF</string>
+    <string name="export_audit">Riwayat Aktivitas (Audit)</string>
+    <string name="export_audit_desc">Ekspor seluruh log audit ke PDF</string>
+
+    <!-- Analytics -->
+    <string name="dues_analytics">Analitik Iuran (Periode Ini)</string>
+    <string name="paid_count">Sudah Bayar: %d</string>
+    <string name="unpaid_count">Belum Bayar: %d</string>
+    <string name="total_arrears">Total Tunggakan</string>
+    <string name="view_detail">Lihat Detail</string>
+</resources>

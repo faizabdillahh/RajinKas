@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Dark Palette -->
+    <color name="primary">#59DBC2</color>
+    <color name="onPrimary">#00382E</color>
+    <color name="primaryContainer">#005146</color>
+    <color name="onPrimaryContainer">#76F8DE</color>
+
+    <color name="secondary">#B1CCC2</color>
+    <color name="onSecondary">#1D352E</color>
+    <color name="secondaryContainer">#334B44</color>
+    <color name="onSecondaryContainer">#CDE9DE</color>
+
+    <color name="tertiary">#F6BD48</color>
+    <color name="onTertiary">#422C00</color>
+    <color name="tertiaryContainer">#5E4100</color>
+    <color name="onTertiaryContainer">#FFDEA3</color>
+
+    <color name="background">#191C1B</color>
+    <color name="onBackground">#E1E3E0</color>
+    <color name="surface">#191C1B</color>
+    <color name="onSurface">#E1E3E0</color>
+    <color name="surfaceVariant">#3F4945</color>
+    <color name="onSurfaceVariant">#DBE5E0</color>
+    <color name="outline">#89938F</color>
+</resources>

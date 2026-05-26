@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        No need to redefine Base.Theme.RajinKas here if it's already in values/themes.xml
+        and uses @color resources. Android will automatically pick colors from values-night/colors.xml
+    -->
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Material 3 Primary Palette (Teal Finance) -->
+    <color name="primary">#006B5B</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#76F8DE</color>
+    <color name="onPrimaryContainer">#00201A</color>
+
+    <color name="secondary">#4B635C</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#CDE9DE</color>
+    <color name="onSecondaryContainer">#07201A</color>
+
+    <color name="tertiary">#7C5700</color>
+    <color name="onTertiary">#FFFFFF</color>
+    <color name="tertiaryContainer">#FFDEA3</color>
+    <color name="onTertiaryContainer">#271900</color>
+
+    <color name="error">#BA1A1A</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="errorContainer">#FFDAD6</color>
+    <color name="onErrorContainer">#410002</color>
+
+    <color name="background">#FBFDFA</color>
+    <color name="onBackground">#191C1B</color>
+    <color name="surface">#FBFDFA</color>
+    <color name="onSurface">#191C1B</color>
+    <color name="surfaceVariant">#DBE5E0</color>
+    <color name="onSurfaceVariant">#3F4945</color>
+    <color name="outline">#6F7975</color>
+</resources>
