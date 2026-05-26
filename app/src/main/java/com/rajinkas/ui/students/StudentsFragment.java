@@ -134,10 +134,18 @@ public class StudentsFragment extends Fragment {
                 newStudent.setPhone(phone);
                 viewModel.insert(newStudent, sessionManager.getUserId());
             } else {
-                student.setName(name);
-                student.setStudentNumber(number);
-                student.setPhone(phone);
-                viewModel.update(student, sessionManager.getUserId());
+                // Create a copy to avoid in-place modification of the list item
+                StudentEntity updatedStudent = new StudentEntity();
+                updatedStudent.setId(student.getId());
+                updatedStudent.setUuid(student.getUuid());
+                updatedStudent.setCreatedAt(student.getCreatedAt());
+                updatedStudent.setIsActive(student.getIsActive());
+                updatedStudent.setSyncStatus(student.getSyncStatus());
+                
+                updatedStudent.setName(name);
+                updatedStudent.setStudentNumber(number);
+                updatedStudent.setPhone(phone);
+                viewModel.update(updatedStudent, sessionManager.getUserId());
             }
             dialog.dismiss();
         });

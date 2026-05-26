@@ -34,6 +34,7 @@ public class AddTransactionFragment extends Fragment {
     private List<CategoryEntity> categories = new ArrayList<>();
     private CategoryEntity selectedCategory;
     private long selectedDateMillis = System.currentTimeMillis();
+    private double currentBalance = 0.0;
 
     @Nullable
     @Override
@@ -65,6 +66,12 @@ public class AddTransactionFragment extends Fragment {
         viewModel.getAllCategories().observe(getViewLifecycleOwner(), categoryEntities -> {
             this.categories = categoryEntities;
             updateCategorySpinner();
+        });
+
+        viewModel.getTotalBalance().observe(getViewLifecycleOwner(), balance -> {
+            if (balance != null) {
+                currentBalance = balance;
+            }
         });
 
         binding.toggleType.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
@@ -117,6 +124,19 @@ public class AddTransactionFragment extends Fragment {
         double amount = Double.parseDouble(amountStr);
         String type = binding.btnIncome.isChecked() ? "INCOME" : "EXPENSE";
 
+        if ("EXPENSE".equals(type) && amount > currentBalance) {
+            new com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
+                    .setTitle("Saldo Tidak Cukup")
+                    .setMessage("Nominal pengeluaran (Rp " + (int)amount + ") melebihi saldo kas saat ini (Rp " + (int)currentBalance + "). Apakah Anda yakin ingin melanjutkan?")
+                    .setPositiveButton("Lanjutkan", (dialog, which) -> executeSave(amount, type, description))
+                    .setNegativeButton("Batal", null)
+                    .show();
+        } else {
+            executeSave(amount, type, description);
+        }
+    }
+
+    private void executeSave(double amount, String type, String description) {
         TransactionEntity transaction = new TransactionEntity();
         transaction.setAmount(amount);
         transaction.setCategoryId(selectedCategory.getId());

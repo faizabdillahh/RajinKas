@@ -38,6 +38,10 @@ public class TransactionViewModel extends AndroidViewModel {
         return categoryRepository.getAllCategories();
     }
 
+    public LiveData<Double> getTotalBalance() {
+        return transactionRepository.getTotalBalance();
+    }
+
     public void insertTransaction(TransactionEntity transaction, int actorUserId) {
         transactionRepository.insert(transaction, actorUserId);
     }
